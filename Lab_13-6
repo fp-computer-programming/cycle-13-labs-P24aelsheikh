@@ -1,0 +1,16 @@
+# Step 1: Create a Python file named lab_13-6.py
+# Step 2: Download the alma-mater.txt file uploaded to Schoology
+# Step 3: Move/locate the file in the same directory as lab_13-6.py
+
+# Step 4: Using the reading files line by line method, read the file and print each line of the file to the console with a blank line between each line.
+
+file_path = "alma_mater.txt.txt"  # Assuming alma-mater.txt is in the same directory as lab_13-6.py
+
+try:
+    with open(file_path, 'r') as file:
+        for line in file:
+            print(line.strip())
+            print()  # Print a blank line after each line
+except FileNotFoundError:
+    print("File not found.")
+
